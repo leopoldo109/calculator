@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Calculadora</title>
+        <link
+            rel="stylesheet"
+            href="styles/style.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="https://img.freepik.com/iconos-gratis/calculadora_318-301562.jpg?w=2000"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <main
+            class="container style-mode"
+            id="container"
+        >
+            <header class="screen style-mode">
+                <div class="resultado">
+                    <h1 id="calculator-math">0</h1>
+                    <h2 id="calculator-result"></h2>
+                </div>
+            </header>
+            <section
+                class="operaciones style-mode"
+                id="calculator-keys"
+            >
+                <button
+                    class="keys"
+                    value="("
+                >
+                    (
+                </button>
+                <button
+                    class="keys"
+                    value=")"
+                >
+                    )
+                </button>
+                <button
+                    class="keys"
+                    data-operation="clear"
+                >
+                    c
+                </button>
+                <button
+                    class="keys"
+                    value="*"
+                >
+                    *
+                </button>
+                <button
+                    class="keys"
+                    value="7"
+                >
+                    7
+                </button>
+                <button
+                    class="keys"
+                    value="8"
+                >
+                    8
+                </button>
+                <button
+                    class="keys"
+                    value="9"
+                >
+                    9
+                </button>
+                <button
+                    class="keys"
+                    value="/"
+                >
+                    ÷
+                </button>
+                <button
+                    class="keys"
+                    value="4"
+                >
+                    4
+                </button>
+                <button
+                    class="keys"
+                    value="5"
+                >
+                    5
+                </button>
+                <button
+                    class="keys"
+                    value="6"
+                >
+                    6
+                </button>
+                <button
+                    class="keys"
+                    value="+"
+                >
+                    +
+                </button>
+                <button
+                    class="keys"
+                    value="1"
+                >
+                    1
+                </button>
+                <button
+                    class="keys"
+                    value="2"
+                >
+                    2
+                </button>
+                <button
+                    class="keys"
+                    value="3"
+                >
+                    3
+                </button>
+                <button
+                    class="keys"
+                    value="-"
+                >
+                    -
+                </button>
+
+                <button
+                    class="keys"
+                    data-operation="delete"
+                >
+                    <iconify-icon icon="lucide:delete"></iconify-icon>
+                </button>
+                <button
+                    class="keys"
+                    value="0"
+                >
+                    0
+                </button>
+                <button
+                    class="keys"
+                    value="."
+                >
+                    .
+                </button>
+
+                <button
+                    class="keys"
+                    data-operation="equal"
+                >
+                    =
+                </button>
+            </section>
+            <section class="historial style-mode">
+                <header class="title">
+                    <h1>Historial</h1>
+                    <span id="controllers">
+                        <button
+                            class="style-mode"
+                            id="clear"
+                        >
+                            <iconify-icon
+                                icon="material-symbols:delete"
+                                style="color: red"
+                                width="20"
+                            ></iconify-icon>
+                        </button>
+                        <button
+                            class="style-mode"
+                            id="mode"
+                        ></button>
+                    </span>
+                </header>
+                <div id="historial-math"></div>
+            </section>
+        </main>
+
+        <script
+            type="module"
+            src="main.js"
+        ></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    </body>
+</html>
